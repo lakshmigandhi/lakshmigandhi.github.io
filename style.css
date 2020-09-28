@@ -1,0 +1,487 @@
+/* Setting Color Variables */
+:root {
+--main-bg-color:#F5F5FF;
+--navy-blue: #1A1423;
+--grey: #B2B2B2;
+--green: #053B06;
+--button-hover: #989898;
+}
+/* General settings */
+html{
+font-family: 'Sen-Regular';
+}
+
+body{
+margin: 0;
+padding: 0;
+background: var(--main-bg-color);
+color: var(--navy-blue);
+}
+
+nav, footer {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+background-color: var(--navy-blue);
+}
+
+nav a, footer a {
+color: white;
+text-decoration: none;
+font-size: 1.25em;
+}
+
+
+h1{
+    margin: 0;
+    padding:0;
+}
+h3{
+font-size: 1.75em;
+margin: 0;
+padding: 0;
+}
+
+.navspacing{
+    margin-top: 0.5em;
+    margin-bottom: 0.3125em;
+    padding-top:0px;
+}
+
+.button{
+font-family: 'Sen-Regular';
+color: var(--green);
+background-color: var(--grey);
+border: none;
+border-radius: 6px;
+margin: 5px;
+font-size: 20px;
+padding:8px;
+text-decoration:none;
+}
+.button:hover {
+background-color: var(--button-hover);
+cursor: pointer;
+}
+
+.floatbutton{
+float:right;
+}
+
+.padding{
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.padding-stories{
+    padding-left: 20em;
+    padding-right: 20em;
+}
+
+
+/* form stuff */
+form{
+text-align: center;
+}
+/* Add a background color and some padding around the form */
+#contactform {
+  border-radius: 5px;
+  padding: 20px;
+}
+/* Form labels */
+label{
+font-size: 1.25em;
+color: var(--navy-blue);
+border: none;
+box-shadow: none;
+
+}
+textarea {
+height:4em;
+padding: 0;
+margin: 0;
+}
+
+input[name="_replyto"] {
+margin-left: 1.5em;
+}
+
+
+input[type=text], select, textarea{
+  /* Full width */
+  font-family: 'Sen-Regular';
+  font-size: 20px;
+  background-color: #DFDFE2;
+  width: 50%;
+  margin-bottom: 0.625em;
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+input[type=text], select {
+    height: 1.875em;
+    padding: 12px; /* Some padding */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=text]:focus, textarea:focus {
+    border: 2px solid var(--green);
+    outline: none;
+}
+
+
+
+.banner{
+text-align: center;
+color: white;
+font-size: 3.125em;
+padding: 140px;
+/*8.75em padding-bottom: 250px;*/
+}
+#homeBanner{
+background-image: url('img/lakshmi/LGHomepage.png');
+}
+
+#serviceBanner {
+background-image: url('img/lakshmi/LGServicePage.png');
+padding: 250px;
+}
+
+/* about.html */
+.about img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.about p {
+color: var(--green);
+font-size: 22px;
+}
+
+.about a {
+color: var(--green);
+text-decoration: underline;
+}
+
+/* index.html */
+/* general settings */
+#about h2, #stories h2, #services h2, #contactform h2 {
+font-size: 3.125em;
+}
+#about p {
+font-size: 1.875em;
+}
+
+#stories a {
+    text-decoration: none;
+    color: var(--navy-blue);
+    text-align: center;
+    font-size: 1.5625em;
+}
+#stories a:hover {
+    text-decoration: underline;
+}
+#stories a, p {
+text-align: center;
+}
+
+#stories p, #services p, #grid2 p{
+font-size: 1.125em;
+color: var(--green);
+}
+
+/* index.html about subsection */
+#photo1 {
+grid-area: photo1
+}
+
+#bio{
+grid-area: bio
+}
+.grid{
+display: grid;
+grid-template-areas: "photo1 bio";
+grid-gap: 3.125em;
+}
+
+/* index.html stories subsection */
+#grid1{
+display: grid;
+grid-template-areas: "malcolmx crazyrichasians";
+grid-gap: 9.375em;
+}
+#grid1 img{
+width: 100%;
+}
+
+/* index.html services subsection */
+#gridServices{
+    display: grid;
+    grid-template-areas: "editing socialmedia";
+    grid-gap: 9.375em;
+}
+
+
+/* stories.html */
+#grid2 {
+display: grid;
+grid-template-areas:
+    "malcolmx"
+    "fiveblacksuffragists"
+    "crazyrichasians"
+    "romancenovels"
+    "wwiindian"
+    "southshanghai"
+    "koreanamerican"
+    "lillysingh"
+    "emilyxrpan"
+    "rabbitliberation"
+    "claudiakishi"
+    "boondocks";
+grid-gap: 50px;
+}
+
+#grid2 a{
+font-size: 25px;
+text-decoration: none;
+color: var(--navy-blue);
+}
+#grid2 a:hover{
+text-decoration: underline;
+}
+#grid2 img{
+width: 100%;
+}
+
+/* Grid template area settings for stories */
+#malcolmx{
+grid-area: malcolmx
+}
+#fiveblacksuffragists{
+grid-area: fiveblacksuffragists
+}
+#crazyrichasians{
+grid-area: crazyrichasians
+}
+#romancenovels{
+grid-area: romancenovels
+}
+#wwiindian{
+grid-area: wwiindian
+}
+#southshanghai{
+grid-area: southshanghai
+}
+#koreanamerican{
+grid-area: koreanamerican
+}
+#lillysingh{
+grid-area: lillysingh
+}
+#emilyxrpan{
+grid-area: emilyxrpan
+}
+#rabbitliberation{
+grid-area: rabbitliberation
+}
+#claudiakishi{
+grid-area: claudiakishi
+}
+#boondocks{
+grid-area: boondocks
+}
+
+/* services.html */
+#editing{
+grid-area: editing
+}
+#proofreading{
+grid-area: proofreading
+}
+#panelmoderation{
+grid-area: panelmoderation
+}
+#research{
+grid-area: research
+}
+#socialmedia{
+grid-area: socialmedia
+}
+#grid3 {
+display: grid;
+grid-template-areas:
+    "editing"
+    "proofreading"
+    "panelmoderation"
+    "research"
+    "socialmedia";
+grid-gap: 20px;
+}
+
+#grid3 p {
+text-align:  center;
+color: var(--green);
+font-size: 25px;
+padding-left: 125px;
+padding-right: 100px;
+}
+
+#grid3 h2 {
+font-size: 35px;
+}
+
+/* responsiveness */
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+/* responsive index.html */
+@media (max-width: 1040px){
+    .banner{
+    font-size: 48px;
+    padding-bottom: 150px;
+    }
+}
+@media (max-width: 1010px){
+    .banner{
+        font-size: 46px;
+        padding-bottom: 160px;
+}
+}
+@media (max-width: 980px){
+    .banner{
+        font-size: 44px;
+        padding-bottom: 200px;
+    }
+    .grid{
+    grid-template-areas: "photo1 " "bio";
+    grid-gap: 3.125em;
+    }
+    #grid1{
+    grid-template-areas: "malcolmx" "crazyrichasians";
+    grid-gap: 100px;
+    }
+    #gridServices{
+        display: grid;
+        grid-template-areas: "editing" "socialmedia";
+        grid-gap: 100px;
+    }
+    #services p{
+    font-size: 20px;
+    }
+}
+
+@media (max-width: 950px){
+    .banner{
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 940px){
+    .banner{
+        font-size: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (max-width: 650px){
+    .banner{
+        font-size: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 45px;
+    }
+    #gridServices{
+    grid-gap: 100px;
+    }
+    #grid1{
+    grid-gap: 100px;
+}
+}
+
+@media (max-width: 515px){
+    #about h2, #stories h2, #services h2, #contactform h2 {
+    font-size: 46px;
+    }
+}
+
+/* responsive about.html */
+@media (max-width: 600px) {
+    .padding{
+        padding: 20px;
+    }
+}
+
+/* responsive service.html */
+@media (max-width: 855px) {
+    #serviceBanner {
+    padding: 200px;
+    }
+    #grid3 h2 {
+    font-size: 35px;
+    }
+    #grid3 p {
+    padding-left: 50px;
+    padding-right: 50px;
+    }
+}
+
+@media (max-width: 780px) {
+    #grid3 h2 {
+    font-size: 35px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    #grid3 p {
+    padding-left: 0;
+    padding-right: 0;
+    }
+}
+@media (max-width: 600px) {
+    #grid3 p {
+    padding-left: 0;
+    padding-right: 0;
+    }
+    #serviceBanner {
+    padding: 100px;
+    }
+}
+
+
+/* stories.html responsiveness */
+@media (max-width: 1100px) {
+    .padding-stories{
+    padding-left: 10em;
+    padding-right: 10em;
+    }
+}
+
+@media (max-width: 800px) {
+    .padding-stories{
+    padding-left: 5em;
+    padding-right: 5em;
+    }
+}
+
+@media (max-width: 580px) {
+    .padding-stories{
+    padding-left: 2em;
+    padding-right: 2em;
+    }
+}

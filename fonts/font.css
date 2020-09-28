@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Sen-Regular';
+  src: url('Sen-Regular.eot');
+  src: url('Sen-Regular.eot?#iefix') format('embedded-opentype'),
+       url('Sen-Regular.svg#Sen-Regular') format('svg'),
+       url('Sen-Regular.ttf') format('truetype'),
+       url('Sen-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
