@@ -504,3 +504,24 @@ font-size: 35px;
         padding-right: 1em;
     }
 }
+
+@media(max-width: 375px)
+{
+    .banner{
+    font-size: 30px;
+    padding-bottom: 100px;
+    padding-top: 70px;
+    padding-left: 0;
+    padding-right: 0;
+    }
+    #bio{
+    font-size: 12px;
+    }
+    #gridServices, #grid1{
+    grid-gap: 3.375em;
+    }
+    #aboutPhoto {
+    width: 100%;
+    height: auto;
+    }
+}
