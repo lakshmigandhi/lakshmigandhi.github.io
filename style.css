@@ -85,10 +85,10 @@ form{
 text-align: center;
 }
 /* Add a background color and some padding around the form */
-#contactform {
+/*#contactform {
   border-radius: 5px;
   padding: 20px;
-}
+}*/
 /* Form labels */
 label{
 font-size: 1.25em;
@@ -103,17 +103,15 @@ padding: 0;
 margin: 0;
 }
 
-input[name="_replyto"] {
+/*input[name="_replyto"] {
 margin-left: 1.5em;
-}
-
+}*/
 
 input[type=text], select, textarea{
   /* Full width */
   font-family: 'Sen-Regular';
   font-size: 20px;
   background-color: #DFDFE2;
-  width: 50%;
   margin-bottom: 0.625em;
   border: 1px solid #ccc; /* Gray border */
   border-radius: 4px; /* Rounded borders */
@@ -140,8 +138,6 @@ input[type=text]:focus, textarea:focus {
     border: 2px solid var(--green);
     outline: none;
 }
-
-
 
 .banner{
 text-align: center;
@@ -391,6 +387,8 @@ font-size: 35px;
     }
 }
 
+
+
 @media (max-width: 940px){
     .banner{
         font-size: 40px;
@@ -483,5 +481,26 @@ font-size: 35px;
     .padding-stories{
     padding-left: 2em;
     padding-right: 2em;
+    }
+}
+
+
+/* contact form */
+@media (min-width: 1024px){
+    input[type=text], select, textarea{
+    width: 50%;
+}
+}
+@media (max-width: 1000px){
+    input[type=text], select, textarea{
+    width: 100%;
+}
+}
+
+@media(min-width: 425px)
+{
+    .padding {
+        padding-left: 1em;
+        padding-right: 1em;
     }
 }
