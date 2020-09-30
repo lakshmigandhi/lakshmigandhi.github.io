@@ -259,12 +259,14 @@ grid-gap: 50px;
 font-size: 25px;
 text-decoration: none;
 color: var(--navy-blue);
+text-align: center;
 }
 #grid2 a:hover{
 text-decoration: underline;
 }
 #grid2 img{
 width: 100%;
+height: auto;
 }
 
 /* Grid template area settings for stories */
